@@ -45,7 +45,7 @@ public class Airline {
     private String cartepay;
     static int userId = 100;
     int volId;
-    
+     
     
     
     
@@ -55,12 +55,11 @@ public class Airline {
         MainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MainFrame.setBounds(50, 0, 1400, 800);
         MainFrame.setLayout(new BorderLayout());
-        
+    	    
 	    
         layeredPane = new JLayeredPane();
         layeredPane.setBounds(0, 0, 1400, 800);
         MainFrame.add(layeredPane);
-        
          
         ImageIcon icone = new ImageIcon(Airline.class.getResource("avion.png"));
         MainFrame.setIconImage(icone.getImage());
@@ -78,6 +77,8 @@ public class Airline {
       
         layeredPane.add(welcome_1, Integer.valueOf(1));
         
+	system.out.println("ce ligne est modifié");
+
         JLabel welcome_2 = new JLabel("PREMIUM ECONOMY");
         welcome_2.setBounds(50, 100, 600, 200);
         welcome_2.setFont(new Font("Arial", Font.BOLD, 55));
