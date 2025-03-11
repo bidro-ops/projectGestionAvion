@@ -553,6 +553,13 @@ public class Airline {
     }
     
     
+     private boolean validateInput() {
+        if (firstName.isEmpty() || lastName.isEmpty() || passportNumber.isEmpty() || email.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Please fill in all fields", "Validation Error", JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
+        return true;
+    }
     
     public static void main(String[] args) {
     
